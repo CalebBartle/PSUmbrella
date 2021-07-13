@@ -17,6 +17,9 @@ Get-UmbrellaNetwork             # List of all networks linked with Umbrella
 Get-UmbrellaRoamingClients      # List of all roaming clients and their status
 Get-UmbrellaSite                # List of sites linked with Umbrella
 Get-UmbrellaVirtualAppliance    # List of all VA's and their status
+Get-UmbrellaInternalDomains     # List of all Umbrella Internal Domains
+New-UmbrellaInternalDomain      # Add a new internal domain using Umbrella API
+Remove-UmbrellaInternalDomain   # Removes an existing internal domain by domain name or ID
 ```
 
 There is also an insane amount of data you can interact with from Umbrella which is not accessible via the provided API's. The below cmdlets are made possible by providing a set of log in credentials and are pretty hacky so be warned I accept no responsibility if you use these destructively. These will also likely break if Umbrella change how they provide xsrf tokens or their cookie set up.
